@@ -20,10 +20,10 @@ authors:
     affiliation: "3,4"
 
   - name: Daisuke Hotta
-    affiliation: "5,6"
+    affiliation: "5,7"
 
   - name: Justin Willmert
-    affiliation: 7
+    affiliation: 6
 
   - name: Simone Silvestri
     affiliation: 1
@@ -35,16 +35,16 @@ authors:
     affiliation: "3,4"
 
   - name: Sam Hatfield
-    affiliation: 8
+    affiliation: 7
 
   - name: David Meyer
-    affiliation: 8
+    affiliation: 7
 
   - name: Tom Kimpson
-    affiliation: "2,9"
+    affiliation: "2,8"
 
   - name: Navid C Constantinou
-    affiliation: 10
+    affiliation: 9 
 
   - name: Chris Hill
     affiliation: 1
@@ -60,16 +60,14 @@ affiliations:
    index: 4
  - name: Japan Meteorological Agency, Tsukuba, Japan
    index: 5
- - name: University of Reading, UK
-   index: 6
  - name: University of Minnesota, Minneapolis, MN, USA
-   index: 7
+   index: 6
  - name: European Centre for Medium-Range Weather Forecasts, Reading, UK
-   index: 8
+   index: 7
  - name: University of Melbourne, Australia
-   index: 9
+   index: 8
  - name: Australian National University, Canberra, Australia
-   index: 10
+   index: 9
    
 date: 14 September 2023
 bibliography: paper.bib
@@ -98,7 +96,7 @@ on iso-latitude rings and the spectral space is defined by the `LowerTriangularM
 of the spherical harmonic coefficients. These three modules are independently usable
 and therefore make SpeedyWeather.jl, beyond its main purpose of simulating the weather,
 also a library for the analysis of gridded data on the sphere.
-Running and analysing simulations can interactively combined, enhancing user
+Running and analysing simulations can be interactively combined, enhancing user
 experience and productivity.
 
 The user interface of SpeedyWeather.jl is heavily influenced by
@@ -114,7 +112,7 @@ the same steps can be executed and interacted with one-by-one in
 Julia's read-evaluate-print loop (REPL). We thereby reach an interactivity
 far beyond a monolithic interface that is limited to the options provided.
 
-To be extendible and composable with new
+To be extensible and composable with new
 model components, SpeedyWeather.jl relies on Julia's multiple dispatch
 programming paradigm [@Bezanson2017]. Every model component
 is defined as a new type. For example, to define a new way how to calculate
